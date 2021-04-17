@@ -1,0 +1,13 @@
+.thead {
+  color: #EEEEEE !important;
+  background-color: #AB47BC ;
+}
+
+@font-face {
+  font-family: Playball;
+  src: url(./Playball.ttf);
+}
+
+body {
+  background-color: #F5F5F5;
+}
