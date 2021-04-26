@@ -57,7 +57,7 @@
 
 
 <div class="columns is-desktop">
-  <div class="column is-three-fifths is-offset-one-fifth">
+  <div class="column is-three-fifths is-offset-one-fifth ">
     <div class="card">
       <div class="card-image">
         <figure class="image">
@@ -80,7 +80,7 @@
   also always accepting donations at our drop box and through our PayPal and Cashapp. Additionally,
   you can join our facebook group to stay updated and learn more ways you can help.</p>
   <br>
-  <p><a href="https://www.facebook.com/groups/542264723030027" class="button is-warning">
+  <p><a href="https://www.facebook.com/groups/542264723030027" id="bt1" class="button is-warning">
     <strong>Facebook</strong>
   </a></p>
 </div>
@@ -90,7 +90,7 @@
       <p class="heading">Money</p>
       <p>We can accept PayPal and Cashapp! Our Cashapp is <b>$heidihelpinghomeless</b>, or you can click the button below to be taken to our PayPal page.</p>
       <br>
-      <p><a href="https://paypal.me/heidihelpingthehome?locale.x=en_US" class="button is-warning">
+      <p><a href="https://paypal.me/heidihelpingthehome?locale.x=en_US"  id="bt2" class="button is-warning">
         <strong>Donate</strong>
       </a></p>
   </div>
@@ -101,10 +101,10 @@
       you can also drop off contributions that aren't on these shopping lists. </p>
       <br>
       <p>
-        <a href="https://www.amazon.com/hz/wishlist/ls/2CLBQOFFR4M8M?ref_=wl_share" class="button is-warning">
+        <a href="https://www.amazon.com/hz/wishlist/ls/2CLBQOFFR4M8M?ref_=wl_share"  id="bt3" class="button is-warning">
           <strong>Amazon Shopping List</strong>
         </a></p><br><p>
-        <a href="https://www.walmart.com/lists/collab/WL/3b0gejGwjzwxu3aeufhEhs" class="button is-warning">
+        <a href="https://www.walmart.com/lists/collab/WL/3b0gejGwjzwxu3aeufhEhs"   id="bt4" class="button is-warning">
           <strong>Walmart Shopping List</strong>
         </a>
       </p>
@@ -135,7 +135,7 @@
 <br>
 
 <div class="columns is-desktop">
-  <div class="column is-half is-offset-one-quarter">
+  <div class="column is-two-thirds is-offset-2 is-full-mobile">
     <div class="card">
       <div class="card-image">
         <figure class="image">
@@ -147,7 +147,7 @@
           <h2>T-Shirts</h2>
           <p>We now have t-shirts available through our facebook page for those who want to show support!
             Adult sizes $20, plus $3 for 2XL and 3XL. Child sizes $18. Please see our post for more info!</p>
-          <p><a href="https://www.facebook.com/groups/542264723030027/permalink/824014458188384/" class="button is-warning">
+          <p><a href="https://www.facebook.com/groups/542264723030027/permalink/824014458188384/"  id="bt5" class="button is-warning">
             <strong>View on Facebook</strong>
           </a></p>
         </div>
@@ -156,17 +156,21 @@
   </div>
 </div>
 <br>
+<div class="has-text-centered">
 <h3 class="title">Contact Us</h3>
-
+<p>Please email me at <a href="mailto://heidihelpingthehomeless@gmail.com">heidihelpingthehomeless@gmail.com</a> for any inquiries, or call
+  (405) 779-0889 during evening hours.</p>
+</div>
+<br>
+<br>
 
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      © 2021 Heidi Helping the Homeless LLC | Built by <a href="">Esteven Hernandez</a>.
+      &#169; 2021 Heidi Helping the Homeless LLC | Built by <a href="">Esteven Hernandez</a>.
     </p>
   </div>
 </footer>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 <script>
   var ind = 1
@@ -189,5 +193,15 @@
     $("#cool").attr("src", src)
     $("#aaaa").text(ind.toString() + "/7")
   }
+
+  $( document ).ready(function() {
+    if ($(window).width() < 1000) {
+    $('#bt1').addClass('is-large');
+    $('#bt2').addClass('is-large');
+    $('#bt3').addClass('is-large');
+    $('#bt4').addClass('is-large');
+    $('#bt5').addClass('is-large');
+}
+});
 </script>
 </body>
